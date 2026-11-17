@@ -139,8 +139,11 @@ body.home .topbar{display:none}
 .hbtn .n{flex:none;width:32px;height:32px;border-radius:50%;background:var(--mustard);display:grid;place-items:center;font-family:"Fredoka";font-weight:700;font-size:17px}
 .hbtn.used{background:var(--cream);color:var(--grey);box-shadow:none}
 .hbtn.used .n{background:#d9c7a7;color:#fff}
+.hbtn.used.on{background:#fff6dc;color:var(--ink);box-shadow:inset 0 0 0 3px var(--mustard)}
+.hbtn.used.on .n{background:var(--mustard);color:var(--ink)}
 .hints{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
 .hints li{display:flex;gap:12px;align-items:flex-start;background:var(--cream2);border-radius:16px;padding:12px 16px;font-size:20px;line-height:1.6;color:var(--ink);animation:pop .35s ease}
+.hints li[hidden]{display:none}
 @keyframes pop{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:none}}
 .hints .tag{flex:none;background:var(--navy);color:var(--mustard);border-radius:999px;font-size:14px;font-weight:700;padding:3px 12px;margin-top:4px}
 .choices{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
@@ -526,7 +529,7 @@ function openQuiz(){
   photoFx(); void img.offsetWidth; img.style.transition="";
   $("#qProg").textContent=`${st.pos+1} / ${st.list.length}`;
   $("#qNum").innerHTML=`${st.pos+1}<small>/${st.list.length}</small>`;
-  $("#hintList").innerHTML=""; $("#emptyTip").style.display="";
+  $("#hintList").innerHTML=""; st.open=null; $("#emptyTip").style.display="";
   $("#hintBtns").innerHTML=HINTS.map((h,i)=>`<button class="hbtn" data-h="${h.k}"><span class="n">${i+1}</span>${h.label}</button>`).join("")+`<button class="hbtn" data-h="choice"><span class="n">?</span>給三個選項</button>`;
   $$("#hintBtns .hbtn").forEach(x=>x.onclick=()=>reveal(x.dataset.h));
   $("#qPrev").disabled=st.pos===0;
@@ -534,7 +537,8 @@ function openQuiz(){
   history.replaceState(null,"","#"+c.key);
 }
 function reveal(k){
-  const c=cur(); if(st.used.includes(k)) return;
+  const c=cur();
+  if(st.used.includes(k)){ showHint(st.open===k?null:k); return; }
   st.used.push(k);
   $(`#hintBtns [data-h="${k}"]`).classList.add("used");
   $("#emptyTip").style.display="none";
@@ -543,11 +547,18 @@ function reveal(k){
   else if(k==="choice"){html=`是哪一個？<div class="choices">${choicesFor(c).map(n=>`<button data-c="${esc(n)}">${esc(n)}</button>`).join("")}</div>`}
   else html=esc(c.hints[k]);
   const li=document.createElement("li");
+  li.dataset.k=k;
   li.innerHTML=`<span class="tag">${h?h.tag:"選項"}</span><div>${html}</div>`;
   $("#hintList").appendChild(li);
+  showHint(k);
   li.querySelectorAll(".choices button").forEach(b=>b.onclick=()=>{if(b.dataset.c===c.name){b.classList.add("right");setTimeout(showAnswer,700)}else b.classList.add("wrong")});
   li.scrollIntoView({block:"nearest",behavior:"smooth"});
   photoFx();
+}
+function showHint(k){
+  st.open=k;
+  $$("#hintList li").forEach(li=>li.hidden=li.dataset.k!==k);
+  $$("#hintBtns .hbtn").forEach(b=>b.classList.toggle("on",b.dataset.h===k));
 }
 function choicesFor(c){
   const others=shuffle(C.filter(x=>x.key!==c.key)), pick=[c.name];
