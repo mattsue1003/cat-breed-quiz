@@ -102,7 +102,11 @@ body.home .topbar{display:none}
 .stage .basket::before{content:"";position:absolute;left:-2%;right:-2%;top:-9px;height:24px;border-radius:14px;background:#fff6dc;box-shadow:inset 0 -6px 0 var(--mustard)}
 .stage .basket::after{content:"";position:absolute;left:0;right:0;top:15px;bottom:0;border-radius:inherit;background:repeating-linear-gradient(0deg,transparent 0 14px,rgba(0,0,0,.08) 14px 16px)}
 .stage .photo{position:absolute;inset:10%;border-radius:50%;overflow:hidden;border:10px solid #fff}
-.stage .photo img{width:100%;height:100%;object-fit:cover;transition:opacity .6s}
+.stage .photo img{width:100%;height:100%;object-fit:contain;transition:opacity .6s}
+/* 整張照片都看得到：主圖不裁切，空白處用同一張照片的模糊放大版補滿 */
+.fitbox{position:relative;overflow:hidden;background:#efe0c6}
+.fitbox::before{content:"";position:absolute;inset:-30px;background:var(--src,none) center/cover no-repeat;filter:blur(22px) saturate(1.05);opacity:.6}
+.fitbox>img{position:relative;object-fit:contain!important}
 .bubble{position:absolute;right:-2%;top:2%;background:#fff;border-radius:60px;padding:14px 26px;box-shadow:0 10px 24px rgba(92,62,20,.15);text-align:center;transform:rotate(-4deg)}
 .bubble b{display:block;color:var(--mustard-d);font-size:clamp(22px,2.6vw,32px);line-height:1.2;font-weight:400}
 .bubble::after,.bubble::before{content:"";position:absolute;background:#fff;border-radius:50%;box-shadow:0 6px 12px rgba(92,62,20,.12)}
@@ -128,7 +132,7 @@ body.home .topbar{display:none}
 .qgrid{display:grid;grid-template-columns:1.1fr 1fr;gap:26px;align-items:start;padding-bottom:30px}
 .qphoto{position:relative;background:var(--paper);border-radius:var(--r);box-shadow:var(--shadow);padding:16px}
 .qphoto .frame{position:relative;border-radius:20px;overflow:hidden;aspect-ratio:4/3.3;background:#efe0c6}
-.qphoto img{width:100%;height:100%;object-fit:cover;transition:filter .6s,transform .8s;display:block}
+.qphoto img{width:100%;height:100%;object-fit:contain;transition:filter .6s,transform .8s;display:block}
 .qnum{position:absolute;left:-14px;top:-14px;width:76px;height:76px;border-radius:50%;background:var(--mustard);color:var(--ink);display:grid;place-items:center;font-family:"Fredoka";font-weight:700;font-size:30px;line-height:1;box-shadow:0 8px 16px rgba(150,95,0,.3);z-index:2}
 .qnum small{font-size:14px;display:block;margin-top:-4px}
 .qpanel{background:var(--paper);border-radius:var(--r);box-shadow:var(--shadow);padding:24px}
@@ -157,7 +161,7 @@ body.home .topbar{display:none}
 .ans{display:flex;flex-direction:column;gap:22px;padding-bottom:36px}
 .ans-hero{display:grid;grid-template-columns:minmax(260px,420px) 1fr;gap:28px;align-items:center}
 .ans-hero .pic{border-radius:22px;overflow:hidden;aspect-ratio:1/1;border:8px solid #fff;box-shadow:0 10px 24px rgba(92,62,20,.15)}
-.ans-hero .pic img{width:100%;height:100%;object-fit:cover}
+.ans-hero .pic img{width:100%;height:100%;object-fit:contain}
 .praise{font-size:18px;color:var(--grey);font-weight:700}
 .ans-name{font-size:clamp(40px,6vw,72px);font-weight:900;color:var(--ink);line-height:1.1;margin:4px 0}
 .ans-en{font-family:"Fredoka";font-weight:600;font-size:clamp(22px,2.6vw,30px);color:var(--mustard-d)}
@@ -207,7 +211,8 @@ body.home .topbar{display:none}
 .ggrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:18px;padding:10px 0 36px}
 .gitem{border:0;background:var(--paper);border-radius:22px;padding:10px 10px 14px;text-align:center;box-shadow:var(--shadow);transition:transform .15s}
 .gitem:hover{transform:translateY(-4px)}
-.gitem img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:16px;display:block;margin-bottom:8px}
+.gitem .gph{display:block;width:100%;aspect-ratio:1/1;border-radius:16px;margin-bottom:8px}
+.gitem .gph img{width:100%;height:100%;display:block}
 .gitem b{display:block;font-size:19px;color:var(--ink);font-weight:900}
 .gitem span{display:block;font-family:"Fredoka";color:var(--mustard-d);font-weight:600;font-size:15px}
 .gitem .done{display:inline-block;margin-top:4px;font-size:13px;font-family:"Noto Sans TC";background:var(--navy);color:var(--mustard);border-radius:99px;padding:1px 10px}
@@ -303,7 +308,7 @@ table.cr th{background:var(--navy);color:var(--mustard);font-weight:700}
       <div class="stage" aria-hidden="true">
         <div class="ring"></div>
         <div class="basket"></div>
-        <div class="photo"><img id="heroImg" src="assets/img/ragdoll.jpg" alt=""></div>
+        <div class="photo fitbox" id="heroPh" style="--src:url(assets/img/ragdoll.jpg)"><img id="heroImg" src="assets/img/ragdoll.jpg" alt=""></div>
         <div class="bubble hand"><b>猜猜我是</b><b>哪一種貓？</b></div>
       </div>
     </div>
@@ -330,7 +335,7 @@ table.cr th{background:var(--navy);color:var(--mustard);font-weight:700}
     <div class="qgrid">
       <div class="qphoto">
         <div class="qnum" id="qNum">1<small>/20</small></div>
-        <div class="frame"><img id="qImg" alt="猜猜這是哪一種貓"></div>
+        <div class="frame fitbox" id="qFrame"><img id="qImg" alt="猜猜這是哪一種貓"></div>
       </div>
       <div class="qpanel">
         <h3>打開提示，一個一個猜</h3>
@@ -455,7 +460,7 @@ paws(); let rT; addEventListener("resize",()=>{clearTimeout(rT);rT=setTimeout(pa
 
 /* 首頁照片輪播 */
 let heroI=0; const heroKeys=["ragdoll","mix","british","siamese","mainecoon","bobtail","abyssinian"];
-setInterval(()=>{ if(!$("#home").classList.contains("on")) return; const im=$("#heroImg"); im.style.opacity=0; setTimeout(()=>{heroI=(heroI+1)%heroKeys.length;im.src="assets/img/"+heroKeys[heroI]+".jpg";im.onload=()=>im.style.opacity=1},500)},5000);
+setInterval(()=>{ if(!$("#home").classList.contains("on")) return; const im=$("#heroImg"); im.style.opacity=0; setTimeout(()=>{heroI=(heroI+1)%heroKeys.length;im.src="assets/img/"+heroKeys[heroI]+".jpg";im.onload=()=>{$("#heroPh").style.setProperty("--src",`url(${im.getAttribute("src")})`);im.style.opacity=1}},500)},5000);
 
 /* ---------- 狀態 ---------- */
 const st = { mode:store.get("mode","see"), order:store.get("order","seq"), scope:store.get("scope","all"), list:C.map((_,i)=>i), pos:0, used:[], gfilter:"all", snd:"show" };
@@ -525,7 +530,7 @@ function photoFx(){
 }
 function openQuiz(){
   const c=cur(); st.used=[]; stopAudio();
-  const img=$("#qImg"); img.style.transition="none"; img.src="assets/img/"+c.key+".jpg"; img.style.transformOrigin=(c.focus||"50% 42%");
+  const img=$("#qImg"); img.style.transition="none"; img.src="assets/img/"+c.key+".jpg"; $("#qFrame").style.setProperty("--src",`url(assets/img/${c.key}.jpg)`); img.style.transformOrigin=(c.focus||"50% 42%");
   photoFx(); void img.offsetWidth; img.style.transition="";
   $("#qProg").textContent=`${st.pos+1} / ${st.list.length}`;
   $("#qNum").innerHTML=`${st.pos+1}<small>/${st.list.length}</small>`;
@@ -589,7 +594,7 @@ function showAnswer(){
   const q=c.key==="mix"?"米克斯 貓":c.name;
   $("#ansBody").innerHTML=`
   <div class="card ans-hero">
-    <div class="pic"><img src="assets/img/${c.key}.jpg" alt="${esc(c.name)}"></div>
+    <div class="pic fitbox" style="--src:url(assets/img/${c.key}.jpg)"><img src="assets/img/${c.key}.jpg" alt="${esc(c.name)}"></div>
     <div>
       <div class="praise">${esc(praise)}，答案是</div>
       <div class="ans-name">${esc(c.name)}</div>${c.formal!==c.name?`<div class="praise" style="color:var(--ink)">${esc(c.formal)}</div>`:""}
@@ -641,7 +646,7 @@ function renderGallery(){
   $$("#gFilter button").forEach(x=>{x.classList.toggle("on",x.dataset.v===st.gfilter);x.onclick=()=>{st.gfilter=x.dataset.v;renderGallery()}});
   const done=store.get("done",[]);
   const list=C.filter(c=>st.gfilter==="all"||c.group===st.gfilter);
-  $("#gGrid").innerHTML=list.map(c=>`<button class="gitem" data-k="${c.key}"><img src="assets/img/${c.key}.jpg" alt="${esc(c.name)}" loading="lazy"><b>${esc(c.name)}</b><span>${esc(c.en.split("（")[0])}</span>${done.includes(c.key)?'<span class="done">猜過了</span>':""}</button>`).join("");
+  $("#gGrid").innerHTML=list.map(c=>`<button class="gitem" data-k="${c.key}"><span class="gph fitbox" style="--src:url(assets/img/${c.key}.jpg)"><img src="assets/img/${c.key}.jpg" alt="${esc(c.name)}" loading="lazy"></span><b>${esc(c.name)}</b><span>${esc(c.en.split("（")[0])}</span>${done.includes(c.key)?'<span class="done">猜過了</span>':""}</button>`).join("");
   $$("#gGrid .gitem").forEach(x=>x.onclick=()=>{buildList(x.dataset.k,st.gfilter);openQuiz()});
 }
 
