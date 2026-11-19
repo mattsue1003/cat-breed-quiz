@@ -18,6 +18,20 @@ window.MEDIA={
     "title": "我們又領養了一隻米克斯🐈‍⬛｜養貓前要準備什麼？為什麼想養貓？",
     "ch": "貓生CATRAWS"
    }
+  ],
+  "more": [
+   {
+    "author": "Basile Morin",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Felis_silvestris_catus_lying_on_rice_straw.jpg"
+   },
+   {
+    "author": "George Chernilevsky",
+    "lic": "Public domain",
+    "licurl": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Domestic_cat_2011_G02.jpg"
+   }
   ]
  },
  "american": {
@@ -37,6 +51,20 @@ window.MEDIA={
     "id": "8-W6r1Dr6iY",
     "title": "【貓咪品種】美國短毛貓_治愈系的天使貓 #養貓知識  #養貓新手  #貓咪 #subscribe #美國短毛貓",
     "ch": "貓咪怎麼養 catknowledges"
+   }
+  ],
+  "more": [
+   {
+    "author": "Tomo",
+    "lic": "CC BY 2.0",
+    "licurl": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:American_shorthair_blotched_tabby.jpg"
+   },
+   {
+    "author": "Ocdp",
+    "lic": "CC BY-SA 3.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:14_years_old_american_shorthair.jpg"
    }
   ]
  },
@@ -58,6 +86,20 @@ window.MEDIA={
     "title": "精華CLIP【欸這可以養嗎】英國短毛貓天生娃娃臉超討喜！ 祖先竟是捕鼠高手？｜有點毛毛的 ｜ETtoday寵物雲",
     "ch": "ETtoday寵物雲"
    }
+  ],
+  "more": [
+   {
+    "author": "George E. Koronaios",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:British_Shorthair._Female._18_months_old.jpg"
+   },
+   {
+    "author": "W2k2",
+    "lic": "CC BY 4.0",
+    "licurl": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:British_Shorthair_IMG_9044.jpg"
+   }
   ]
  },
  "persian": {
@@ -77,6 +119,20 @@ window.MEDIA={
     "id": "v4EKFkit0Mk",
     "title": "【從零開始養】扁臉貓!波斯貓?加菲貓?扁臉貓居然這麼多種?睡覺跟人一樣會打呼?超會流淚?有基因缺陷嗎?【許伯簡芝】Persian cat",
     "ch": "許伯&簡芝—倉鼠人"
+   }
+  ],
+  "more": [
+   {
+    "author": "Takashi(aes256)",
+    "lic": "CC BY-SA 2.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Persian_in_Cat_Cafe.jpg"
+   },
+   {
+    "author": "Pixoos",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Persian_Cat_by_Pouria_Afkhami_pixoos.jpg"
    }
   ]
  },
@@ -98,6 +154,20 @@ window.MEDIA={
     "title": "暹羅貓為什麼會變色？你家貓現在是黑貓還是白貓？【初識貓咪EP11】",
     "ch": "靜靜養貓"
    }
+  ],
+  "more": [
+   {
+    "author": "Felinlove",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Siamese_cat,_female.jpg"
+   },
+   {
+    "author": "Karin Langner-Bahmann, upload von Martin Bahmann",
+    "lic": "CC BY-SA 3.0",
+    "licurl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Siam_lilacpoint.jpg"
+   }
   ]
  },
  "ragdoll": {
@@ -117,6 +187,20 @@ window.MEDIA={
     "id": "2xvSmTnGLHQ",
     "title": "貓中之后 布偶貓【品種貓介紹系列之二】最精簡的布偶貓起源、類別、照護介紹",
     "ch": "喵星人的二三事"
+   }
+  ],
+  "more": [
+   {
+    "author": "Cgomez766",
+    "lic": "CC0",
+    "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Seal_Point_mitted_Ragdoll_BreedingCat.jpg"
+   },
+   {
+    "author": "Cgomez766",
+    "lic": "CC0",
+    "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Gato_Ragdoll_BreedingCat.jpg"
    }
   ]
  },
@@ -138,6 +222,20 @@ window.MEDIA={
     "title": "【欸這可以養嗎】霸氣外露的「緬因貓」個性其實超溫柔！傳說竟是浣熊的後代？｜有點毛毛的 ｜ETtoday寵物雲",
     "ch": "ETtoday寵物雲"
    }
+  ],
+  "more": [
+   {
+    "author": "T. Bjornstad",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Maine_Coon_male_NO_Sigdalskauen_Balder.jpg"
+   },
+   {
+    "author": "ales brad",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Maine_Coon_Cat_List_Characteristics.jpg"
+   }
   ]
  },
  "fold": {
@@ -157,6 +255,20 @@ window.MEDIA={
     "id": "jFlwy6YkjFE",
     "title": "蘇格蘭摺耳貓健康風險😺三大疾病大揭密 Feat. 寵樂動物醫院 張軒祐獸醫師【哈寵小學堂】｜#哈寵誌 哈寵PETube 第325集",
     "ch": "哈寵PETube"
+   }
+  ],
+  "more": [
+   {
+    "author": "Marija Yurlagina",
+    "lic": "CC BY 4.0",
+    "licurl": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Scottish-Fold.jpg"
+   },
+   {
+    "author": "Psihopat",
+    "lic": "CC BY 3.0",
+    "licurl": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Scottish_Fold_lila.jpg"
    }
   ]
  },
@@ -178,6 +290,20 @@ window.MEDIA={
     "title": "【動物百科】怕羞暖男俄羅斯藍貓　最怕環境有轉變主人有乜要注意？ #動物百科 #動物蘋台",
     "ch": "果籽"
    }
+  ],
+  "more": [
+   {
+    "author": "Doug Miller",
+    "lic": "CC BY 2.0",
+    "licurl": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Russian_Blue_Cat_American_type.jpg"
+   },
+   {
+    "author": "Nickolas Titkov from Moscow, Russian Federation",
+    "lic": "CC BY-SA 2.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Male_Russian_Blue_cat_at_the_2011_Moscow_Cat_Show_(5624853840).jpg"
+   }
   ]
  },
  "bengal": {
@@ -197,6 +323,20 @@ window.MEDIA={
     "id": "eoKuR-b4tJA",
     "title": "高貴又狂野！【孟加拉豹貓】超詳細介紹！性格│品相│特點│常見誤區",
     "ch": "緩慢"
+   }
+  ],
+  "more": [
+   {
+    "author": "Another one of my pictures:[[File:|150x150px]]\n\n\n\nThis photo",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Bengal_-_18.jpg"
+   },
+   {
+    "author": "Another one of my pictures:\n\n\n\nThis photograph was taken by ",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Bengal_-_20150402_22h18_(10049).jpg"
    }
   ]
  },
@@ -218,6 +358,20 @@ window.MEDIA={
     "title": "【斯芬克斯貓】又醜又禿，還沒毛，卻受到貴族喜愛的貓（漫畫家鳥山明也養這種貓）",
     "ch": "寵物世界 Pet World"
    }
+  ],
+  "more": [
+   {
+    "author": "Dmitry Makeev",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:1_adult_cat_Sphynx._img_047.jpg"
+   },
+   {
+    "author": "Jakub Hałun",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:20170604_Sphynx_cat_7984.jpg"
+   }
   ]
  },
  "munchkin": {
@@ -237,6 +391,20 @@ window.MEDIA={
     "id": "Gn-FERYsgEs",
     "title": "【欸這可以養嗎】矮肥短集一身！號稱貓界臘腸的曼赤肯 天生短腿是基因缺陷？｜有點毛毛的 ｜ETtoday寵物雲",
     "ch": "ETtoday寵物雲"
+   }
+  ],
+  "more": [
+   {
+    "author": "Tasy Hong",
+    "lic": "CC0",
+    "licurl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Munchkin_cat_2_(cropped).jpg"
+   },
+   {
+    "author": "Fedorov078",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Munchkin_Aliska_Karapuz.jpg"
    }
   ]
  },
@@ -258,6 +426,20 @@ window.MEDIA={
     "title": "動物百科：古老貓種阿比西尼亞貓 活潑好動最易患上哮喘(果籽)",
     "ch": "果籽"
    }
+  ],
+  "more": [
+   {
+    "author": "Martin Bahmann",
+    "lic": "CC BY-SA 3.0",
+    "licurl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Abessinierkater1.jpg"
+   },
+   {
+    "author": "Oleg Royko",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Abyssinian_cat_-_Patricia.jpg"
+   }
   ]
  },
  "norwegian": {
@@ -277,6 +459,20 @@ window.MEDIA={
     "id": "pkZxA7dY-rw",
     "title": "想養挪威森林貓？先做到這五件事｜新手適合嗎？活動量超大？毛量驚人？有遺傳疾病？領養還是購買？EP53",
     "ch": "那堤一隻貓 Latte the Cat"
+   }
+  ],
+  "more": [
+   {
+    "author": "Pieter Lanser",
+    "lic": "CC BY 2.0",
+    "licurl": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Norwegian_Forest_Cat_face.jpg"
+   },
+   {
+    "author": "Durator",
+    "lic": "Public domain",
+    "licurl": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Norwegian_Forest_Cat_in_snow_(closeup).jpg"
    }
   ]
  },
@@ -298,6 +494,20 @@ window.MEDIA={
     "title": "養異國短毛貓前的10個真相：它是你的夢幻貓咪嗎？",
     "ch": "動物知識AnimalDK4U"
    }
+  ],
+  "more": [
+   {
+    "author": "Zoebufigahvex",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:HK_HH_%E7%B4%85%E7%A3%A1_Hung_Hom_%E7%95%B0%E5%9C%8B%E9%95%B7%E7%9F%AD%E6%AF%9B%E8%B2%93_Exotic_Shorthair_bleed_cat_November_2020_SS2_15.jpg"
+   },
+   {
+    "author": "Dmitry Brant",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Bissel_3.jpg"
+   }
   ]
  },
  "bobtail": {
@@ -317,6 +527,20 @@ window.MEDIA={
     "id": "bdkm1rcKv_c",
     "title": "日本截尾貓由唐貓基因突變長出波波尾 迷倒日本天皇變招財貓 歌川國芳浮世繪都畫佢 #動物百科 #動物蘋台─果籽 香港 Apple Daily─原刊日期：20210411",
     "ch": "果籽"
+   }
+  ],
+  "more": [
+   {
+    "author": "Unknown",
+    "lic": "CC BY-SA 3.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Japanese_Bobtail_walking.JPG"
+   },
+   {
+    "author": "Linrx81",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Alicia_the_Bobtail_Cat.jpg"
    }
   ]
  },
@@ -338,6 +562,20 @@ window.MEDIA={
     "title": "【德文捲毛貓】詳細介紹,包含優缺點 性格 品項標準 遺傳病 飼養注意事項 起源",
     "ch": "緩慢"
    }
+  ],
+  "more": [
+   {
+    "author": "Pathfinder Linden",
+    "lic": "CC BY 2.0",
+    "licurl": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Devon_Rex_Izzy.jpg"
+   },
+   {
+    "author": "Nickolas Titkov from Moscow, Russian Federation",
+    "lic": "CC BY-SA 2.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Devon-rex_%E2%80%A2_%D0%94%D0%B5%D0%B2%D0%BE%D0%BD-%D1%80%D0%B5%D0%BA%D1%81_(5289781036).jpg"
+   }
   ]
  },
  "angora": {
@@ -357,6 +595,20 @@ window.MEDIA={
     "id": "3pD6xSiJ9C0",
     "title": "{貓}黑猩猩的貓介紹11-15 15世紀的神貓你認識嗎? 【挪威森林貓，西伯利亞貓，美國短毛貓，俄羅斯藍貓，土耳其安哥拉貓】",
     "ch": "黑猩猩老師"
+   }
+  ],
+  "more": [
+   {
+    "author": "Vinydeluz",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Turkish_angora_3_top_show_girls.jpg"
+   },
+   {
+    "author": "Vinydeluz",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Turkish_angora_tortie_tabby_white_(2021;_cropped_2026).jpg"
    }
   ]
  },
@@ -378,6 +630,20 @@ window.MEDIA={
     "title": "“缅因猫、挪威森林猫、西伯利亚猫”——三种森林猫大百科",
     "ch": "猫和狗"
    }
+  ],
+  "more": [
+   {
+    "author": "Tadeáš Bednarz",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Siberian_black_tabby_blotched_cat_03.jpg"
+   },
+   {
+    "author": "TimRudyGit",
+    "lic": "CC BY-SA 4.0",
+    "licurl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Siberian_Cat_1.jpg"
+   }
   ]
  },
  "mau": {
@@ -397,6 +663,20 @@ window.MEDIA={
     "id": "E6MlDrB_qCU",
     "title": "Egyptian Mau Cat 101 - Learn ALL About Them!",
     "ch": "Cat Nation"
+   }
+  ],
+  "more": [
+   {
+    "author": "liz west from Boxborough, MA",
+    "lic": "CC BY 2.0",
+    "licurl": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Egyptian_Mau_Bronze.jpg"
+   },
+   {
+    "author": "Lil Shepherd from United Kingdom",
+    "lic": "CC BY 2.0",
+    "licurl": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Egyptian_mau_-_Horus_2_(2009;_cropped_2024).jpg"
    }
   ]
  }
